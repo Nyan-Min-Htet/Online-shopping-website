@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.in{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 25px;
+    height: 70px;
+}
+.in ul{
+    display: flex;
+    list-style: none;
+    margin-left: 250px;
+
+}
+.in ul li{
+    padding: 10px;
+    align-items: center;
+    line-height: 3;
+}
+.in ul li:hover{
+    color: orange;
+}
+.mm{
+    display: flex;
+    margin-top: 20px;
+}
+.mm .mission{
+    width: 50%; 
+    line-height: 1.5;
+}
+.mission h1{
+    margin-bottom: 20px;
+}
+.mm .vision{
+    width: 50%;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+.vision h1{
+    margin-bottom: 20px;
+}
+
+.out{
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+.out ul{
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.out ul li{
+    letter-spacing: 3px;
+    justify-content: space-between;
+    margin-left: 33px;
+}
+.out ul li:hover{
+    color: orange;
+    margin-right: 20px;
+    transition: 1s;
+}
+.out .main{
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+}
+.out .child1{
+    width: 60%;
+}
+.out .child2{
+    width: 40%;
+}
+.social{
+    background-color: black;
+    margin: 50px 0px 60px 90px;
+}
+/*.fa {
+    padding: 15px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 0px 0px 18px;
+    border-radius: 50%;
+    color: white;
+  }*/
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: white;
+    font-size: 50px;
+  }
+  .ff{
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 0px 0px 10px;
+    border-radius: 50%;
+    color: white;
+  }
+  .ff:hover {
+      opacity: 0.7;
+  }

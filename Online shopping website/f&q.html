@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&Q</title>
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       .fq{
+        height: 650px;
+        width: 60%;
+        margin-top: 45px;
+        margin-left: 250px;
+       }
+       .fq h3{
+        height: 60px;
+        line-height: 3;
+        padding-left: 30px;
+       }
+       .fq p{
+        height: 70px;
+        padding-left: 30px;
+        line-height: 2;
+        color: gray;
+        padding-right: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+                    <li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+                    <li><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:120px;margin-left: 100px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'"  style="width: 13%; font-size: 19px" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px;font-size: 16px;">Register</button>
+			<div class="form-popup" id="myForm">
+			<form action="fashion.html" class="form-container" method="post" name="registerForm" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+    <h1 style="text-align: center;margin-top: 40px">Frequently Asked Questions</h1>
+    <div class="fq">
+        <h3 style="background-color: #d9d9d9;">Can I Cancel my subscription at anytime?</h3>
+        <p style="margin-top: 10px;">Sure. Your paid subscription can be cancelled anytime by shifting to Lite plan.</p>
+        <h3 style="background-color: #d9d9d9;">Can I change my plan later on?</h3>
+        <p>Absolutely! You can upgrade or downgrade your plan anytime. The money paid for the previous subscription will be recalculated to the new plan.</p>
+        <h3 style="background-color: #d9d9d9;">Will you renew my subscription automatically?</h3>
+        <p style="margin-top: 10px;">Yes, your subscription will be automatically renewed according to your pay period.</p>
+        <h3 style="background-color: #d9d9d9;">Do you offer any discounts?</h3>
+        <p>Yes! We offer 17% discount for payment per year. There may be other temporary discounts, check for this inside the service.</p>
+        <h3 style="background-color: #d9d9d9;">Can I request a refund?</h3>
+        <p style="margin-top: 10px;">Sure, you will be welcome to request your refund within 14 days of subscribing to any paid plan.</p>
+    </div>
+    <footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media">
+						<a href="#" style="font-size: 30px;" class="fa fa-facebook ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-twitter ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-instagram ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-pinterest ff"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <button onclick="topFunction()" id="top" style="width: 6%;" title="Go to top">Top</button>
+      <script src="fashion.js"></script>
+</body>
+</html>

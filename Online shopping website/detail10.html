@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fashion.css">
+    <link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .parent{
+            display: flex;
+            margin-top: 50px;
+        }
+        .photo{
+            width: 60%;
+        }
+        .photo img{
+            width: 350px;
+            height: 400px;
+            padding-left: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .photo .img3{
+            margin-left: 180px;       
+        }
+        .text{
+            width: 40%;
+        }
+        .text h2{
+            margin-top: 20px;
+            background-color: yellow;
+            width: 19%;
+            height: 40px;
+            padding: 5px 10px 10px 5px;
+        }
+        .text .fa-star{
+            margin-top: 20px;
+        }
+        .text a{
+            color: black;
+            padding-left: 10px;
+        }
+        .text h3{
+            font-style: italic;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .img{
+            display: flex;
+        }
+        .img img{
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+        select{
+            width: 80%;
+            height: 50px;
+            padding-left: 10px;
+        }
+        .atc-button{
+            width: 80%;
+            margin-left: -10px;
+            background-color: yellow;
+            color: black;
+            border-radius: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+        .fa-truck{
+            font-size: 34px;
+            padding-right: 20px;
+        }
+        .fa-shield{
+            font-size: 34px;
+            padding-right: 20px;
+            margin-top: 20px;
+        }
+        h4{
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .para1{
+            margin-bottom: 10px;
+        }
+        .para2{
+            margin-bottom: 50px;
+        }
+        .benefit{
+            width: 100%;
+            padding-left: 20px;
+            background-color: #e6e6e6;
+            height: 530px;
+        }
+        .ch1{
+            display: flex;
+            width: 100%;
+            padding-left: 20px;
+        }
+        .ch1 .hh{
+            margin-top: 20px;
+        }
+        .ch2{
+            display: flex;
+            width: 100%;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+        .ch2 .hh{
+            margin-top: 20px;
+        }
+        .text1{
+            width: 50%;
+        }
+        .text1 .fa-fan{
+            font-size: 40px;
+        }
+        .text2{
+            width: 50%;
+        }
+        .text2 .fa-rocket{
+            font-size: 40px;
+        }
+        .text3{
+            width: 50%;
+        }
+        .text3 .fa-temperature-half{
+            font-size: 40px;
+        }
+        .text4{
+            width: 50%;
+        }
+        .text4 .fa-water{
+            font-size: 40px;
+        }
+        .ch3{
+            display: flex;
+            width: 100%;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+        .ch3 .hh{
+            margin-top: 20px;
+        }
+        .text5{
+            width: 50%;
+        }
+        .text5 .fa-shuffle{
+            font-size: 40px;
+        }
+        .text6{
+            width: 50%;
+        }
+        .text6 .fa-leaf{
+            font-size: 40px;
+        }
+        .like-shirt{
+            width: 300px;
+            height: 300px;
+            margin-left: 50px;
+        }
+        .price{
+            background-color: yellow;
+            width: 7%;
+            height: 40px;
+            padding: 5px 10px 10px 5px;
+            margin-left: 90px;
+        }
+        .star{
+            margin-left: 90px;
+            margin-top: 30px;
+        }
+        .atc-button1{
+            width: 19%;
+            margin-left: 90px;
+            background-color: yellow;
+            color: black;
+            border-radius: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+         .child-img{
+            margin-top: 40px;
+            display: flex;
+        }
+        .child-img img{
+            width: 250px;
+            height: 300px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo" style="display: flex;">
+                <h1 style="font-size: 40px;">Authentic</h1>
+            </div>
+            <div class="menu">
+                <ul style="margin-left: 160px;">
+                    <li style="font-size: 23px;"><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+                    <li style="font-size: 23px;"><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+                    <li style="font-size: 23px;"><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+                    <li style="font-size: 23px;"><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 140px;font-size: 16px;">Login</button>
+                <div id="id01" class="modal">
+                <form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+                    <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img/avatar.jfif" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname">
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw">
+                        
+                    <button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size: 19px;" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+
+            <button class="open-button" onclick="openForm()" style="margin-right: 30px; font-size: 16px;">Register</button>
+
+            <div class="form-popup" id="myForm">
+            <form method="post" action="fashion.html" name="registerForm" class="form-container" onsubmit="return RegisterValidate()">
+                <h1 style="margin-bottom: 20px;">Register</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw">
+
+                <label for="reppsw"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+            </div>
+        </nav>
+    </div>
+    <div class="parent">
+        <div class="photo">
+            <img src="img/trouser-detail3.webp">
+            <img src="img/trouser-detail4.webp">
+            <img src="img/trouser-detail5.webp" class="img3">
+        </div>
+        <div class="text">
+            <h1>Women Suit Pant</h1>
+            <h2>$59.70</h2>
+            <span class="fas fa-star checked"></span>
+            <span class="fas fa-star checked"></span>
+            <span class="fas fa-star checked"></span>
+            <span class="fas fa-star checked"></span>
+            <span class="fas fa-star"></span>
+            <span style="padding-left: 5px;">4/5<a href="#">See all 147 reviews</a></span>
+            <h3>COLOR: DARK GREEN / Asphalt Blue</h3>
+            <div class="img">
+              <img src="img/trouser-detail3.webp">
+            <img src="img/trouser-detail4.webp">
+            <img src="img/trouser-detail5.webp">
+            </div>
+            <h3>SIZE:</h3>
+            <select>
+                <option>SELECT SIZE</option>
+                <option value="S">S Out Of Stock</option>
+                <option value="M">M Out Of Stock</option>
+                <option value="L">L Out Of Stock</option>
+                <option value="XL">XL Out Of Stock</option>
+                <option value="2XL">2XL Out Of Stock</option>
+            </select>
+            <a href="addToCard.html"><button type="button" class="atc-button" value="submit">ADD TO CART</button></a>
+            <p><i class="fas fa-truck"></i>FREE delivery for orders above $399</p>
+            <p><i class="fas fa-shield"></i>All products are eligible for lifetime return</p>
+            <h4>Product Description</h4>
+            <p class="para1">Our designers created this flannel shirt for going anywhere in the world in comfort with complete peace of mind.</p>
+            <p class="para2">It is strong and pratical, and ideal solution for winter and summer alike, for trips into town and outdoor adventures.</p>
+        </div>
+    </div>
+    <div class="benefit">
+        <h4 style="padding-top: 20px;padding-left: 20px;">Product Benefit</h4>
+        <div class="ch1">
+            <div class="text1">
+                <i class="fas fa-fan"></i>
+                <h4 class="hh">durability</h4>
+                <p>Shoulder reinforcement and protection against buttons being torn off.</p>
+            </div>
+            <div class="text2">
+                <i class="fas fa-rocket"></i>
+                <h4 class="hh">pockets</h4>
+                <p>2 secure, hidden pockets on the sides for your blank card and passport.</p>
+            </div>
+        </div>
+        <div class="ch2">
+            <div class="text3">
+                <i class="fas fa-temperature-half"></i>
+                <h4 class="hh">warmth</h4>
+                <p>Light flannel to add a little warmth.</p>
+            </div>
+            <div class="text4">
+                <i class="fas fa-water"></i>
+                <h4 class="hh">quick drying</h4>
+                <p>If you hand wash it in the evening, it will be ready to wear the next morning!</p>
+            </div>
+        </div>
+        <div class="ch3">
+            <div class="text5">
+                <i class="fas fa-shuffle"></i>
+                <h4 class="hh">flexibility</h4>
+                <p>Adjust the length of your sleeves using the fastening tab.</p>
+            </div>
+            <div class="text6">
+                <i class="fas fa-leaf"></i>
+                <h4 class="hh">ecodesign</h4>
+                <p>Product made from 100% organically grown cotton.</p>
+            </div>
+        </div>
+    </div>
+    <p style="margin-left: 30px;margin-top: 40px;">YOU MIGHT ALSO LIKE</p>
+     <div class="ph">
+        <div class="child-img">
+            <div>
+                <img src="img/trouser-like4.webp">
+                <p style="margin-left: 50px;margin-top: 20px;margin-bottom: 10px;">Women's Crinkled High Rise F...</p>
+                <p style="color:grey;margin-left:50px;width: 250px;">Lowest Price Of the Summer Season</p>
+                <p style="margin-left: 50px;">$ 48.99</p>
+            </div>
+            <div>
+                <img src="img/trouser-like5.webp">
+                <p style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;">Women's High-Rise Wide-Leg...</p>
+                <p style="margin-left: 50px;color: grey;">New Markdown </p>
+                <p style="margin-left: 50px;">$65.40</p>
+            </div>
+            <div>
+                <img src="img/trouser-like6.webp">
+                <p style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;">Women's Wide-Leg Pleated P...</p>
+                <strike style="margin-left: 50px;">$99.00</strike>
+                <p style="margin-left: 50px;">$59.40</p>
+            </div>
+             <div>
+                <img src="img/trouser-like7.webp">
+                <p style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;">Women's Wide Leg Linen Pants</p>
+                <strike style="margin-left: 50px;">$99.00 </strike>
+                <p style="margin-left: 50px;">$59.40</p>
+            </div>
+        </div> 
+    <footer>
+        <div class="main">
+            <div class="main1">
+                <div class="child">
+                    <div class="logo">
+                        <h1 style="font-size: 50px;">Authentic</h1>
+                    </div>
+                    <div class="media">
+                        <a href="https://www.facebook.com" style="font-size: 30px;" class="fa fa-facebook"></a>
+                        <a href="https://www.twitter.com" style="font-size: 30px;" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com" style="font-size: 30px;" class="fa fa-instagram"></a>
+                        <a href="https://www.pinterest.com" style="font-size: 30px;" class="fa fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="child1">
+                    <h2>RESOURCES</h2>
+                    <p>Application</p>
+                    <p>Documentation</p>
+                    <p>Systems</p>
+                    <p>F&Q</p>
+                </div>
+                <div class="child2">
+                    <h2>PRICING</h2>
+                    <p>Overview</p>
+                    <p>Premium Plans</p>
+                    <p>Affiliate Program</p>
+                    <p>Promotions</p>
+                </div>
+                <div class="child3">
+                    <h2>COMPANY</h2>
+                    <p>About Us</p>
+                    <p>Blog</p>
+                    <p>Partnerships</p>
+                    <p>Careers</p>
+                    <p>Press</p>
+                </div>
+                <div class="child4">
+                    <h2>Social</h2>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                    <p>Pinterest</p>
+                </div>
+                <div class="child5" style="margin-right: 20px;">
+                    <h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+                    <i class="fa fa-cc-visa" style="
+                                                    color: white;
+                                                    font-size: 40px;
+                                                    margin-right: 10px;"></i>
+                    <i class="fa fa-cc-amex" style="
+                                                    color: blue;
+                                                    font-size: 40px;
+                                                    margin-right: 10px;"></i>
+                    <i class="fa fa-cc-mastercard" style="
+                                                    color: red;
+                                                    font-size: 40px;
+                                                    margin-right: 10px;"></i>
+                    <i class="fa fa-cc-discover" style="    
+                                                    color: orange;
+                                                    font-size: 40px;
+                                                    margin-right: 10px;"></i>
+                    <form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+                        <input type="text" name="email" placeholder="Enter Your Email" style="
+                                                                        padding: 10px;
+                                                                        margin-top: 15px;
+                                                                        font-size: 18px;
+                                                                        border: none;
+                                                                        border-radius: 10px;">
+                        <button type="submit" style="
+                                                     padding: 5px 15px 5px 10px;
+                                                     margin-top: 8px;
+                                                     margin-right: 16px;
+                                                     background: #ddd;
+                                                     font-size: 18px;
+                                                     border: none;
+                                                     cursor: pointer;
+                                                     width: 50%;
+                                                     background-color: green;">Subimt</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+            <p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+        </div>
+      </footer>
+      <script src="fashion.js"></script>
+</body>
+</html>

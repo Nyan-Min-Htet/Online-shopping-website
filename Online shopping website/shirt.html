@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shirt</title>
+	<link rel="stylesheet" href="fashion.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.row .column4{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column4 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column4 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column4 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column4 .btn{
+			width: 180px;
+		}
+		.column4 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column5{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column5 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column5 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column5 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column5 .btn{
+			width: 180px;
+		}
+		.column5 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column6{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column6 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column6 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column6 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column6 .btn{
+			width: 180px;
+		}
+		.column6 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column7{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column7 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column7 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column7 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column7 .btn{
+			width: 180px;
+		}
+		.column7 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column8{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column8 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column8 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column8 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column8 .btn{
+			width: 180px;
+		}
+		.column8 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.background img{
+			margin-top: 10px;
+			width: 100%;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 100px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size:19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px;font-size: 16px;">Register</button>
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" class="form-container" name="registerForm" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	<div class="background">
+		<img src="img/shirtBackground.jpg">
+	</div>
+	<div class="row"> 
+		<div class="column4">
+			<div>
+				<img src="img/shirt/shirt8.jfif" class="shop-item-image">
+				<div class="text">
+					<h2>JACQUARD SHIRT</h2>
+					<p>74% viscose, 18% nylon, 8% polyester</p>
+					<p>Do not use bleach</p>
+					<p>Dry clean With tetrachloroethylene</p>
+					<p>Do not tumble dry</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>2,190 THB</p>
+					<button class="btn "><a href="detail3.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt9.jpg" >
+				<div class="text">
+					<h2>Regular Fit Linen Short Sleeve SHIRT</h2>
+					<p>100% linen</p>
+					<p>Making it light and airy for summer</p>
+					<p>Locker loop and boxpleat</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span><del>619.00 AED</del><span> 179.00 AED</span></p>
+					<button class="btn"><a href="detail4.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt10.jfif">
+				<div class="text">
+					<h2>LINEN EXCEL SHIRT</h2>
+					<p>60% Excel 40% Linen</p>
+					<p>Regular Fit</p>
+					<p>Classic Full sleeved solid shirt with Regualr Collar</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Rs. 1849.00</p>
+					<del>Rs. 3699.00</del><span style="color: red;margin-left: 10px;">50%off</span>
+					<button class="btn"><a href="detail5.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt11.webp">
+				<div class="text">
+					<h2>Men Tactical Cargo Work Shirt</h2>
+					<p>Four Season</p>
+					<p>Daily</p>
+					<p>China (Mainland)</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>MMK 37,835</p>
+					<del>MMK 74,197</del><span style="color: red;margin-left: 10px;">49%off</span>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="column5">
+			<div><img src="img/shirt/shirt12.jfif">
+				<div class="text">
+					<h2>Nike Sportswear T-Shirt Grey</h2>
+					<p>Regular Fit</p>
+					<p>M NSW Tee ICON FUTURA</p>
+					<p>Cotton</p>
+					<p>Mid-length sleeve</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 24,99</p>
+					<button class="btn"><a href="detail3.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt13.jpg">
+				<div class="text">
+					<h2>Nike Sportswear T-Shirt White</h2>
+					<p>Regular Fit</p>
+					<p>M NSW Tee ICON FUTURA</p>
+					<p>Cotton</p>
+					<p>Mid-length sleeve</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 24,99</p>
+					<button class="btn"><a href="detail4.html">Buy Now</a></button>
+				<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt14.jpg">
+				<div class="text">
+					<h2>Men Leisure Beach Shirt</h2>
+					<p>Summer</p>
+					<p>Trip</p>
+					<p>Broadcloth</p>
+					<p>Floral</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>MMK 13,460</p>
+					<button class="btn"><a href="detail5.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt15.jfif">
+				<div class="text">
+					<h2>Max Boys Checked Regular Fit Shirt</h2>
+					<p>100% Cotton</p>
+					<p>Western</p>
+					<p>Button Front</p>
+					<p>Solid</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>M.R.P.: 748</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>  
+		<div class="column6">
+			<div><img src="img/shirt/shirt16.jfif">
+				<div class="text">
+					<h2>KIDS - CAPS T-Shirt In Black</h2>
+					<p>100% Cottone</p>
+					<p>Vintage jersey</p>
+					<p>Crewneck</p>
+					<p>Made In Portugal</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>CAD$ 275</p>
+					<button class="btn"><a href="detail3.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt17.webp">
+				<div class="text">
+					<h2>Killing the Name!</h2>
+					<p>Four Seasons</p>
+					<p>O-Neck</p>
+					<p>Cotton</p>
+					<p>Casual</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>MMK 18,106</p>
+					<del>MMK 20,584</del><span style="color: red;margin-left: 10px;">12%off</span>
+					<button class="btn"><a href="detail4.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt18.webp">
+				<div class="text">
+					<h2>FRACTION OVERSIZED T-SHIRT</h2>
+					<p>Oversized fit</p>
+					<p>Dropped shoulders</p>
+					<p>Round neckline</p>
+					<p>100% cotton</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$40</p>
+					<button class="btn"><a href="detail5.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt19.jpg">
+				<div class="text">
+					<h2>Pure Cotton Shirt</h2>
+					<p>100% cotton Single Jersey</p>
+					<p>Round Neck</p>
+					<p>Half Sleeve</p>
+					<p>Regular fit</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$509.00</p>
+					<del>$1,699.00</del><span style="color: red;margin-left: 10px;">(70% off)</span>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>  
+		<div class="column7">
+			<div><img src="img/shirt/shirt20.webp">
+				<div class="text">
+					<h2>Sorry! This item was so popular, it sold out.</h2>
+					<p>But click <a href="detail3.html">here</a> to see other styles we think you'll like.</p>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt21.jfif">
+				<div class="text">
+					<h2>LUBBOCK City Texas T-Shirt</h2>
+					<p>Machine Wash</p>
+					<p>Imported</p>
+					<p>Pull ON</p>
+					<p>100% cotton</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$120.00</p>
+					<button class="btn"><a href="detail4.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt22.jpg">
+				<div class="text">
+					<h2>LOGO-EMBROIDERED</h2>
+					<p>Slim fit</p>
+					<p>Press-stud cuffs</p>
+					<p>Press-stud front fastening</p>
+					<p>100% linen</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$376.00</p>
+					<button class="btn"><a href="detail5.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt23.webp">
+				<div class="text">
+					<h2>SITE EXCLUSIVE! T-SHIRT</h2>
+					<p>Unisex sizing</p>
+					<p>Crew Neck Tee</p>
+					<p>Machine wash, tumble dry low</p>
+					<p>100% Cotton</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$40.00</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="column8">
+			<div><img src="img/shirt/shirt24.webp">
+				<div class="text">
+					<h2>Nike Sportswear Premium Essentials</h2>
+					<p>Loose fit for a roomy feel</p>
+					<p>Woven label</p>
+					<p>Machine wash</p>
+					<p>100% Cotton</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$1,995</p>
+					<button class="btn"><a href="detail3.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt25.jfif">
+				<div class="text">
+					<h2>Vintage Xbox One T-Shirt</h2>
+					<p>Vintage</p>
+					<p>M US letter</p>
+					<p>Use in good shape</p>
+					<p>Original 2013 launch shirt</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>AU$37.81</p>
+					<button class="btn"><a href="detail4.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt26.jfif">
+				<div class="text" style="height: 250px;">
+					<h2>ABUCIYO</h2>
+					<p>Sky Blue</p>
+					<p>Short Sleeve</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$45</p>
+					<button class="btn"><a href="detail5.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/shirt/shirt27.jpg">
+				<div class="text">
+					<h2>DENIM SHIRT</h2>
+					<p>100% Cotton</p>
+					<p>Do not use bleach/ whitener</p>
+					<p>Tetrachloroethylene Dry Clean</p>
+					<p>Low Temperature dryer may be used</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>39.90USD</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<a href="suit.html">
+		<button type="button" style="width: 10%;
+									background-color:red;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Suit</button></a>
+		<a href="trouser.html">
+		<button type="button" style="width: 10%;
+									background-color:blue;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Trousers</button></a>
+		<a href="shoe.html">
+		<button type="button" style="width: 10%;
+									background-color:	yellow;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Shoes</button></a>
+	</div>
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child ch">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media mm">
+						<a href="#" style="font-size: 30px;" class="fa fa-facebook"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <button onclick="topFunction()" id="top" style="width: 6%;" title="Go to top">Top</button>
+	  <script src="fashion.js"></script>
+	  
+</body>
+</html>

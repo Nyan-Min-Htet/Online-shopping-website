@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Detail1</title>
+	<link rel="stylesheet" href="fashion.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.parent{
+            display: flex;
+            margin-top: 50px;
+        }
+        .photo-table{
+            width: 60%;
+        }
+        .photo img{
+            width: 350px;
+            height: 380px;
+            padding-left: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .photo .img3{
+            margin-left: 180px;       
+        }
+        table{
+        	margin-left: 10px;
+        }
+        th{
+        	height: 60px;
+        	background-color: #e6e6e6;
+        }
+        td{
+        	text-align: center;
+        	height: 35px;
+        }
+        .text{
+            width: 40%;
+        }
+        select{
+            width: 80%;
+            height: 50px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        .cart-quantity-input{
+        	width: 13%;
+        	height: 30px;
+        	margin-top: 20px;
+        	padding-left: 19px;
+        }
+        .atc-button{
+            width: 80%;
+            background-color: black;
+            color: white;
+            border-radius: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+        .con{
+        	display: flex;
+        	width: 90%;
+        }
+        .con img{
+        	width: 300px;
+        	height: 400px;
+        	margin: 50px;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo" style="display: flex;">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul style="margin-left: 160px;">
+					<li style="font-size: 23px;"><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li style="font-size: 23px;"><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li style="font-size: 23px;"><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li style="font-size: 23px;"><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 140px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size: 19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px; font-size: 16px;">Register</button>
+
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" name="registerForm" class="form-container" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	<div class="parent">
+		<div class="photo-table">
+			<div class="photo">
+	            <img src="img/suit-detail1.webp">
+	            <img src="img/suit-detail2.webp">
+        	</div>
+        	<h2 style="text-align: center;margin-bottom: 20px;">SIZE CHART</h2>
+        	<table width="90%" border="1" cellpadding="100px" cellspacing="0.5px">
+        		<tr>
+        			<th colspan="10">SUIT JACKETS, BLAZERS, WAISTCOATS & OVERCOATS</th>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">INTERNATIONAL</td>
+        			<td>XS</td>
+        			<td>S</td>
+        			<td>M</td>
+        			<td>L</td>
+        			<td>XL</td>
+        			<td>XXL</td>
+        			<td>3XL</td>
+        			<td>4XL</td>
+        			<td>5XL</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">UK / US</td>
+        			<td>34</td>
+        			<td>36</td>
+        			<td>38</td>
+        			<td>40</td>
+        			<td>42</td>
+        			<td>44</td>
+        			<td>46</td>
+        			<td>48</td>
+        			<td>50</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">AU / IT</td>
+        			<td>44</td>
+        			<td>46</td>
+        			<td>48</td>
+        			<td>50</td>
+        			<td>52</td>
+        			<td>54</td>
+        			<td>56</td>
+        			<td>58</td>
+        			<td>60</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">CM</td>
+        			<td>88</td>
+        			<td>92</td>
+        			<td>96</td>
+        			<td>100</td>
+        			<td>104</td>
+        			<td>108</td>
+        			<td>112</td>
+        			<td>116</td>
+        			<td>20</td>
+        		</tr>
+        		<tr>
+        			<th colspan="10">Shirts</th>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">INTERNATIONAL</td>
+        			<td>XS</td>
+        			<td>S</td>
+        			<td>M</td>
+        			<td>M-L</td>
+        			<td>L</td>
+        			<td>XL</td>
+        			<td>XXL</td>
+        			<td>3XL</td>
+        			<td>4XL</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">INCH</td>
+        			<td>14.4"</td>
+        			<td>15"</td>
+        			<td>15.5"</td>
+        			<td>15.75"</td>
+        			<td>16"</td>
+        			<td>16.5"</td>
+        			<td>17"</td>
+        			<td>17.5"</td>
+        			<td>18"</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">CM</td>
+        			<td>37</td>
+        			<td>38</td>
+        			<td>39</td>
+        			<td>40</td>
+        			<td>41</td>
+        			<td>42</td>
+        			<td>43</td>
+        			<td>44</td>
+        			<td>46</td>
+        		</tr>
+        		<tr>
+        			<th colspan="10">TROUSERS AND CHINOS</th>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">INTERNATIONAL</td>
+        			<td>XS</td>
+        			<td>S</td>
+        			<td>M</td>
+        			<td>M-L</td>
+        			<td>L</td>
+        			<td>XL</td>
+        			<td>XXL</td>
+        			<td>3XL</td>
+        			<td>4XL</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">INCH</td>
+        			<td>28"</td>
+        			<td>30"</td>
+        			<td>32"</td>
+        			<td>34"</td>
+        			<td>36"</td>
+        			<td>38"</td>
+        			<td>40"</td>
+        			<td>42"</td>
+        			<td>44"</td>
+        		</tr>
+        		<tr>
+        			<td style="background-color: #e6e6e6;">CM</td>
+        			<td>37</td>
+        			<td>38</td>
+        			<td>39</td>
+        			<td>40</td>
+        			<td>41</td>
+        			<td>42</td>
+        			<td>43</td>
+        			<td>44</td>
+        			<td>46</td>
+        		</tr>
+        	</table>
+		</div>
+        <div class="text">
+        	<h3 style="margin-bottom:30px;">JOE BLACK</h3>
+        	<h2>ANCHOR JACKET - BLACK</h2>
+        	<p style="margin-top: 20px;font-size: 20px;">$499</p>
+        	<p style="margin-top: 30px;">Make 4 interest-free payments of $124.75 with afterpay</p>
+        	 <select>
+                <option>Jacket Size: S/36/46/92</option>
+                <option value="M">M/38/48/96</option>
+                <option value="L">L/40/50/100</option>
+                <option value="XL">XL/42/52/104</option>
+                <option value="XXL">XXL/44/54/108</option>
+                <option value="3XL">3XL/46/56/112</option>
+                <option value="4XL">4XL/48/58/116</option>
+            </select>
+            <select>
+                <option>Jacket Length: Short</option>
+                <option value="Short">SHORT</option>
+                <option value="Regular">REGULAR</option>
+            </select>
+            <div>
+            	<input type="number" value="1" class="cart-quantity-input">
+            </div>
+            <a href="addToCard.html"><button type="button" class="atc-button" value="submit">ADD TO CART</button></a>
+            <p style="width: 90%;margin-bottom: 30px;">The Anchor jacket is Joe’s signature tailored suit jacket, both simple in design and versatile. Made with 100% pure wool and half canvas construction, this 2B horn button suit features straight flap pockets, four button sleeves and side vents at the back for a more refined shape. To wear as a matching suit, pair the jacket with the optional Razor FJV032 trouser.</p>
+            <p style="width: 90%;margin-bottom: 30px;">Carefully select your individual jacket size and available jacket length for your perfect fit.</p>
+            <p style="width: 90%; margin-bottom: 30px;">The suit is a tailored fit and is dry clean only.</p>
+            <p style="width: 90%;">Model's height: 185cm (6'1") and is wearing a size ‘M / 38 / 48 / 96’ jacket.</p>
+        </div>
+    </div>
+    <h2 style="text-align: center; margin: 40px 0px 0px 0px;">Have You Considered &nbsp; &nbsp; Recently Viewed</h2>
+    <div class="con">
+    	<div>
+    		<img src="img/like-suit1.webp">
+    		<div class="text" style="width: 99%;margin-left: 50px;">
+    			<h3 >MISSION JKT FJP820 - CHARCOAL</h3>
+    			<p>$ 525.00</p>
+    		</div>
+    	</div>
+    	<div>
+    		<img src="img/like-suit2.webp">
+    		<div class="text" style="width: 99%;margin-left: 50px;">
+    			<h3>MAIL VEST FJP820 - CHARCOAL</h3>
+    			<p>$ 225.00</p>
+    		</div>
+    	</div>
+    	<div>
+    		<img src="img/like-suit3.webp">
+    		<div class="text" style="width: 99%;margin-left: 50px;">
+    			<h3 >RAZOR TROUSER FJP820 - CHARCOAL</h3>
+    			<p>$ 300.00</p>
+    		</div>
+    	</div>
+    </div>
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media">
+						<a href="https://www.facebook.com" style="font-size: 30px;" class="fa fa-facebook"></a>
+						<a href="https://www.twitter.com" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="https://www.pinterest.com" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <script src="fashion.js"></script>
+	  
+</body>
+</html>

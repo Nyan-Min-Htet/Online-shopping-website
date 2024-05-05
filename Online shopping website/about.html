@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="Fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+                    <li><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:120px;margin-left: 100px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'"  style="width: 13%; font-size: 18px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px; font-size: 16px;">Register</button>
+			<div class="form-popup" id="myForm">
+			<form action="fashion.html" class="form-container" method="post" name="registerForm" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+    <div class="in">
+        <ul>
+            <li>SERIES</li>
+            <li>TOPICS</li>
+            <li>PICKS</li>
+            <li>NOWNESS DIGITAL FESTIVAL</li>
+            <li>SPECIAL PROGRAMS</li>
+            <li>NOWNESS AWARDS</li>
+        </ul>
+    </div>
+	<div class="out">
+		<h1 style="
+		margin: 70px 0px 0px 30px;
+		font-size: 45px;
+		font-family: 'Arial Narrow', sans-serif;
+	">ABOUT US</h1>
+		<ul>
+			<li style="color: orange;">ABOUT NOWNESS &nbsp;</li>
+			<li><a href="f&q.html" style="text-decoration: none; color: black;">F&Q &nbsp;</a></li>
+			<li>AUTHENTIC AWARDS &nbsp;</li>
+			<li>BECOME A CONTRIBUTOR &nbsp;</li>
+		</ul>
+		<div class="mm">
+    		<div class="mission">
+    			<h1>Our Mission</h1>
+    			<p>Our mission is to inspire and empower fashion enthusiasts by providing a comprehensive and immersive online platform that celebrates individual style, fosters creativity, and promotes sustainable and inclusive fashion choices. We strive to curate a diverse range of fashion content,from trend analysis and style guides to informative articles and interviews, creating a hub that educates, engages and connects fashion lovers worldwide.</p>
+    		</div>
+    		<div class="vision">
+    			<h1>Our Vision</h1>
+    			<p>Our Vision is to become the go-to destination for fashion enthusiasts, where they can explore, discover, and express their unique style with confidence. We aim to revolutionize the fashion industry by promoting ethical practices, sustainability, and body positivity, challenging conventional beauty standards and fostering a culture of inclusivity. By leveraging technology and innovation, we aspire to provide a seamless and personalized user experience, making fashion accessible to all while nurturing a global community that embraces self-expression and celebrates the artistry of fashion.</p>
+    		</div>
+    	</div>
+		<div class="main">
+			<div class="child1" >
+				<h2>A global video fashion channel screening the best in culture</h2>
+				<p style="margin: 30px 0px 0px 0px; word-spacing: 4px;line-height: 1.5;">AUTHENTIC 		is a movement for creative execellence in starytelling celebrating the 
+					extraordinary of every day. Launced in 2010, AUTHENTIC's unique programming strategy
+					has established it an the go to source of inspiration and influrance across act, design,
+					fashion, beauty, music, food and travel. Our curatorial expertise and award-winning approach
+					to storyelling is unparalleled. We work with exceptional talent, and both established and emerging
+					filmmakes, which connects our audience to emotional and sensorial stories designed to provoke inspiration
+					and debate. AUTHENTIC launched a Chinese-language site in 2012 and AUTHENTIC ASIA in 2020. Since 2013, 
+					videos are available up to 10 languages _ including English, Chinese, French, German, Italian, Japanese,
+					Korean, Portuguese, Spanish and Russian (simply turn on Subtitles on our player).
+				</p>
+			</div>
+			<div class="child2">
+				<button type="button" style="
+											background-color: white;
+											color: black;
+											border: 1px solid black;
+											border-radius: 0px;
+											width: 50%;
+											font-size: 15px;
+											margin: 40px 0px 0px 130px;">Become a member</button>
+			<p style="
+				margin: 40px 0px 0px 110px;
+			">ALREADY A MEMBER? <a href="#" style="color: black;">SIGN IN</a></p>
+			<div class="social">
+				<a href="#" style="font-size: 30px;" class="fa fa-facebook"></a>
+				<a href="#" style="font-size: 30px;" class="fa fa-twitter"></a>
+				<a href="#" style="font-size: 30px;" class="fa fa-instagram"></a>
+				<a href="#" style="font-size: 30px;" class="fa fa-pinterest"></a>
+				<a href="#" style="font-size: 30px;" class="fa fa-tumblr"></a>
+				<a href="#" style="font-size: 30px;" class="fa fa-vine"></a>
+			</div>	
+			</div>
+		</div>	
+	</div>
+	
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media">
+						<a href="#" style="font-size: 30px;" class="fa fa-facebook ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-twitter ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-instagram ff"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-pinterest ff"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2>PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa ff" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex ff" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard ff" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover ff" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+    <script src="fashion.js"></script>
+</body>
+</html>

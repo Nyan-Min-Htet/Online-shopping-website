@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suit</title>
+	<link rel="stylesheet" href="fashion.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.row .column4{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column4 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column4 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column4 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column4 .btn{
+			width: 180px;
+		}
+		.column4 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column5{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column5 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column5 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column5 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column5 .btn{
+			width: 180px;
+		}
+		.column5 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column6{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column6 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column6 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column6 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column6 .btn{
+			width: 180px;
+		}
+		.column6 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column7{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column7 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column7 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column7 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column7 .btn{
+			width: 180px;
+		}
+		.column7 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.row .column8{
+			display: flex;
+			width: 100%;
+			padding: 20px 20px 20px 20px;
+			margin-left: 20px;
+		}
+		.row .column8 img{
+			margin-left: 30px;
+			border-radius: 10px;
+			width:250px;
+			height:300px;
+		}
+		.column8 .text{
+			width: 260px;
+			height: 320px; 
+			line-height: 1.8;
+			margin-left: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 10px;
+			margin-top: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.column8 .fa-cart-shopping{
+			color: white;
+			float: right;
+			margin: 10px 10px 0px 0px;
+			font-size: 35px;
+		}
+		.column8 .btn{
+			width: 180px;
+		}
+		.column8 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+		}
+		.background img{
+			margin-top: 10px;
+			width: 100%;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 100px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size: 19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px;font-size: 16px;">Register</button>
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" class="form-container" name="registerForm" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	<div class="background">
+		<img src="img/suitBackground.jpg">
+	</div>
+	<div class="row"> 
+		<div class="column4">
+			<div><img src="img/suit/suit8.jfif">
+				<div class="text">
+					<h2>Slim Fit Italian Linen Suit</h2>
+					<p>Slim Fit</p>
+					<p>Button fastening</p>
+					<p>Peak lapel</p>
+					<p>Added Stretch</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Out Of Stock </span></p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit9.jpg">
+				<div class="text">
+					<h2>Ateleir Munro | Black Stretch Wool Suit</h2>
+					<p>98% Wool, 2% Elastane</p>
+					<p>2 Buttons</p>
+					<p>Slim notch lapel & patch pockets</p>
+					<p>Zip Fly</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$ 1,095.00</p>
+					<button class="btn"><a href="detail6.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit10.webp">
+				<div class="text">
+					<h2>VENDETTA PREMIUM BIRDSEYE SUIT</h2>
+					<p>Slim Fit</p>
+					<p>Super 150's wool</p>
+					<p>Navy</p>
+					<p>Custom Lapel</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$699</p>
+					<button class="btn"><a href="detail7.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit11.jfif">
+				<div class="text">
+					<h2>MEN's Navy Twill Double Breasted Slim Fit Suit Jacket</h2>
+					<p>Slim Fit</p>
+					<p>100% wool</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$379</p>
+					<button class="btn"><a href="detail8.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="column5">
+			<div><img src="img/suit/suit12.jfif">
+				<div class="text">
+					<h2>ULTRA SLIM MEDIUM PERFORMANCE WEDDING SUIT</h2>
+					<p>Ultra Slim Fit</p>
+					<p>Cool Max/Sorona/Wool</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span><strike>$215</strike> | $175</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit13.jfif">
+				<div class="text">
+					<h2>Elmer checkered suit</h2>
+					<p>Soft constructed</p>
+					<p>Flap</p>
+					<p>Lined</p>
+					<p>Single breasted</p>
+					<p>75% wool, 25% silk</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 799</p>
+					<button class="btn"><a href="detail6.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit14.webp">
+				<div class="text" style="height: 230px;">
+					<h2>LUXURAZI</h2>
+					<p>Cotton</p>
+					<p>Solid</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Currently Unavailable </span></p>
+					<button class="btn"><a href="detail7.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit15.jpg">
+				<div class="text">
+					<h2>Men burgundy suit</h2>
+					<p>Premimu Imported TR Fabric</p>
+					<p>Fabric of Suit</p>
+					<p>Fabric of FREE Gift</p>
+					<p>Video</p>
+					<p>Handmade</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 799</p>
+					<button class="btn"><a href="detail8.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>  
+		<div class="column6">
+			<div><img src="img/suit/suit16.jpg" >
+				<div class="text">
+					<h2>SHADES SKINNY FIT PINK LINEN SUIT</h2>
+					<p>Skinny</p>
+					<p>Linen</p>
+					<p>2 Piece</p>
+					<p>Pink</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>175 GBP</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit17.jfif">
+				<div class="text">
+					<h2>SLIM Single breasted check suit jacket</h2>
+					<p>75% Polyester</p>
+					<p>22% Viscose</p>
+					<p>Grey</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>kr 250,00 <strike style="color: red;">kr 830,00</strike> | 70% Off</p>
+					<button class="btn"><a href="detail6.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit18.jfif" >
+				<div class="text">
+					<h2>AUDEN WOOL RICH SUIT TROUSERS</h2>
+					<p>Slim Fit</p>
+					<p>Check Pattern</p>
+					<p>Single-breasted double button front</p>
+					<p>Two front flap pockets</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span><strike style="color: red;">$ 135.00</strike> $54.00</p>
+					<button class="btn"><a href="detail7.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit19.jfif">
+				<div class="text">
+					<h2>CAVANI CONNALL NAVY SUIT</h2>
+					<p>Slim Fit</p>
+					<p>4 button cuff</p>
+					<p>Single vent back.</p>
+					<p>66% polyester 32% rayon</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 49.99</p>
+					<button class="btn"><a href="detail8.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>  
+		<div class="column7">
+			<div><img src="img/suit/suit20.jfif">
+				<div class="text">
+					<h2>Grey Slimt Fit Trimmed Suit</h2>
+					<p>Dry Clean Only.</p>
+					<p>Main 56% wool, 38% polyester	</p>
+					<p>6% other fibres.</p>
+					<p>Lining 100% Polyester.</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>Euro 132</p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit21.jfif">
+				<div class="text">
+					<h2>MINT SUIT</h2>
+					<p>100% Italian Wool.</p>
+					<p>Half canvas.</p>
+					<p>Natural shoulders (no padding)</p>
+					<p>Functional buttonholes.</p>
+					<p>Made In Italy</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$ 743.91 USD</p>
+					<button class="btn"><a href="detail6.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit22.jfif">
+				<div class="text">
+					<h2>Tuxedo jacket + vest + pant new latest</h2>
+					<p>Skinny.</p>
+					<p>Zipper Fly.</p>
+					<p>England Style</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>MMK 251,748 <strike>MMK 1,258,760</strike><span style="color: red;"> 80% Off</span></p>
+					<button class="btn"><a href="detail7.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit23.jfif">
+				<div class="text">
+					<h2>Camel Slim-Fit Suit</h2>
+					<p>Camel.</p>
+					<p>49% polyester, 49% Viscose.</p>
+					<p>Single-breasted suit</p>
+					<p>Silm-fit</p>
+					<p>Dry Clean Only</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$ 289.00 <strike style="color: red;">$ 489.00</strike></p>
+					<button class="btn"><a href="detail8.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="column8">
+			<div><img src="img/suit/suit24.jfif">
+				<div class="text">
+					<h2>Camel Slim-Fit Suit</h2>
+					<p>Camel.</p>
+					<p>49% polyester, 49% Viscose.</p>
+					<p>Single-breasted suit</p>
+					<p>Silm-fit</p>
+					<p>Dry Clean Only</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$ 289.00 <strike style="color: red;">$ 489.00</strike></p>
+					<button class="btn"><a href="addToCard.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit25.jpg">
+				<div class="text" style="height: 230px;">
+					<h2>WYLZZZNB09</h2>
+					<p>Cotton</p>
+					<p>Smart</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Currently Unavailable </span></p>
+					<button class="btn"><a href="detail6.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+			<div><img src="img/suit/suit26.jfif">
+				<div class="text" style="height: 230px;">
+					<h2 >Sorry, this item is unavailable.</h2>
+				</div>
+			</div>
+			<div><img src="img/suit/suit27.jpg">
+				<div class="text">
+					<h2>Navy Lazio Suit</h2>
+					<p>Pure Wool S110's.</p>
+					<p>100% Wool.</p>
+					<p>Vitable Barberis Canonico, Italy</p>
+					<p>Silm-fit</p>
+					<p>Dry Clean Only</p>
+					<p><span style="font-size: 21px; font-weight: bold; color: red;">Price: </span>$ 698</p>
+					<button class="btn"><a href="detail8.html">Buy Now</a></button>
+					<a href="addToCard.html"><i class="fa fa-cart-shopping"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<a href="shirt.html">
+		<button type="button" style="width: 10%;
+									background-color:red;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Shirt</button></a>
+		<a href="trouser.html">
+		<button type="button" style="width: 10%;
+									background-color:blue;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Trousers</button></a>
+		<a href="shoe.html">
+		<button type="button" style="width: 10%;
+									background-color:	yellow;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Shoes</button></a>
+	</div>
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child ch">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media mm">
+						<a href="#" style="font-size: 30px;" class="fa fa-facebook"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <script src="fashion.js"></script>
+</body>
+</html>

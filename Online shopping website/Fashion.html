@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fashion Website</title>
+	<link rel="stylesheet" href="fashion.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo" style="display: flex;">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul style="margin-left: 160px;">
+					<li style="font-size: 23px;"><a href="#" style="text-decoration: none;color: black;">Home</a></li>
+					<li style="font-size: 23px;"><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li style="font-size: 23px;"><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li style="font-size: 23px;"><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 140px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size: 19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px; font-size: 16px;">Register</button>
+
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" name="registerForm" class="form-container" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide">
+			<img src="img/background.png" alt="background">
+		  </div>
+		  <div class="swiper-slide">
+			<img src="img/background2.png" alt="background2">
+		  </div>
+		  <div class="swiper-slide">
+			<img src="img/background3.jfif" alt="background3">
+		  </div>
+		  <div class="swiper-slide">
+			<img src="img/background4.webp" alt="background3">
+		  </div>
+		</div>
+		<div class="swiper-pagination"></div>
+	  </div>
+	  <div class="product">
+		<h1>Recent Products</h1>
+		<p>AUTHENTIC is a movement for creative execellence in starytelling celebrating the 
+					extraordinary of every day. Launced in 2010, AUTHENTIC's unique programming strategy
+					has established it an the go to source of inspiration and influrance across act, design,
+					fashion, beauty, music, food and travel. Our curatorial expertise and award-winning approach
+					to storyelling is unparalleled.</p>
+	  </div>
+	  <div>
+		<a href="shirt.html">
+			<button type="button" style="width: 10%;
+									background-color:green;
+									color: white;						
+									margin-left: 50px;
+									font-size: 15px;">
+		Shirt</button></a>
+		<a href="suit.html">
+		<button type="button" style="width: 10%;
+									background-color:red;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Suit</button></a>
+		<a href="trouser.html">
+		<button type="button" style="width: 10%;
+									background-color:blue;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Trousers</button></a>
+		<a href="shoe.html">
+		<button type="button" style="width: 10%;
+									background-color:	yellow;
+									color: white;
+									margin-left: 5px;
+									font-size: 15px;">
+		Shoes</button></a>
+	  </div>
+	<div class="row" style="margin-left: 40px;"> 
+		<div class="column" style="margin-left: -10px;"></div>
+		<div class="column1" style="margin-left: 10px;"></div>  
+		<div class="column2" style="margin-left: 10px;"></div>  
+		<div class="column3"></div>
+	</div>
+	  <hr>
+	  <h1 style="text-align: center;padding: 20px 0px 20px 0px;">Popular Products</h1>
+	  <div class="row1">
+	  	<div class="photo1">
+	  		<div><img src="img/popular/product1.jfif">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Maxdutti Fashion Sky Blue Long Sleeve</h3>
+	  				<p style="margin-bottom: 5px;">MMK 44,925 <strike>MMK 52,248</strike><p style="color: red;"> 14% Off <span class="badge" style="margin: 10px;">New</span></p></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  		<div><img src="img/popular/product2.jfif" style="height: 300px;">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">FEAR OF GOD ESSENTIALS</h3>
+	  				<p style="margin-bottom: 10px;">Euro 60.00 <span class="badge">New</span></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="photo2">
+	  		<div><img src="img/popular/product3.jpg">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Trend by MaxMan Navy Suit</h3>
+	  				<p style="margin-bottom: 10px;"><strike>$ 695.00</strike><span>$ 452.00</span> <span class="badge">New</span></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  		<div><img src="img/popular/product4.jpeg">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Devon Bostick (Black Suit)</h3>
+	  				<p style="margin-bottom: 10px;color: red;">Currently unavailable</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="photo3">
+	  		<div><img src="img/popular/product5.jpg">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Casual Loose Wide-Leg Drape Suit Trousers Pants</h3>
+	  				<p style="margin-bottom: 10px;">S$ 64.00<span class="badge" style="margin-left: 10px;">New</span></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  		<div><img src="img/popular/product6.jpg">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Monte Carlo Mens Cotton Lycra Trouser</h3>
+	  				<p style="margin-bottom: 10px;color: red;">Currently unavailable</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="photo4">
+	  		<div><img src="img/popular/product7.webp">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Men Balenciaga Shoes</h3>
+	  				<p style="margin-bottom: 10px;color: red;">$ 3,950 / pair <span class="badge" style="margin-left: 10px;">New</span></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  		<div><img src="img/popular/product8.webp">
+	  			<div class="text">
+	  				<h3 style="margin-bottom: 10px;">Nike Air Jordan 1 Retro High OG Washed Heritage White Grey</h3>
+	  				<p style="margin-bottom: 10px;">394860 MMK <span style="color:red;"> (20% Off)</span><span class="badge" style="margin-left: 10px;">HOT SALE</span></p>
+	  				<a href="detail.html" style="color: black;margin-bottom: 10px;">Buy Now</a>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <hr>
+	  <h1 style="text-align: center; padding: 20px 0px 20px 0px;">Our Team</h1>
+	  <div class="row">
+		<div class="column">
+		  <div class="card">
+			<img src="img/ceo.jpg" alt="Jane" style="width:100%;height: 227px;">
+			<div class="container">
+			  <h2>Khin Phone</h2>
+			  <p class="title">CEO & Founder</p>
+			  <p>Good CEO and experience 5years and above.</p>
+			  <p style="color: red;">khinphone428@gmail.com</p>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <p><button class="button" style="font-size: 15px;">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		<div class="column">
+		  <div class="card">
+			<img src="img/artdirector.jpg" alt="Mike" style="width:100%;height: 227px;">
+			<div class="container">
+			  <h2>Nicole Kris</h2>
+			  <p class="title">Art Director</p>
+			  <p>Art directors typically overse the work of other designers and artists who produce image for television, film, live performances, advertisements, or video games.</p>
+			  <p style="color: red;">nicolekris123@gmail.com</p>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <p><button class="button" style="font-size: 15px;">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		<div class="column">
+		  <div class="card">
+			<img src="img/designer.webp" alt="John" style="width:100%;height: 227px;">
+			<div class="container">
+			  <h2>Nyan Min Htet</h2>
+			  <p class="title">Designer</p>
+			  <p>Designer is a person who plans the form or structure of something before it is made, by perparing drawing or plans.</p>
+			  <p style="color: red;">nhtet9968@gmail.com</p>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <span class="fas fa-star checked"></span>
+			  <p><button class="button"  style="font-size: 15px;">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		<div class="column">
+			<div class="card">
+			  <img src="img/leader.jpg" alt="Mike" style="width:100%;height: 227px;">
+			  <div class="container">
+				<h2>Smith Swillow</h2>
+				<p class="title">Team Leader</p>
+				<p>A team leader provides guidance and instruction to a working group that a project or portfolio of projects.</p>
+				<p style="color: red;">smith897@gmail.com</p>
+				<span class="fas fa-star checked"></span>
+				<span class="fas fa-star checked"></span>
+				<span class="fas fa-star checked"></span>
+				<span class="fas fa-star checked"></span>
+				<span class="fas fa-star checked"></span>
+				<p><button class="button" style="font-size: 15px;">Contact</button></p>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  <footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media">
+						<a href="https://www.facebook.com" style="font-size: 30px;" class="fa fa-facebook "></a>
+						<a href="https://www.twitter.com" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="https://www.pinterest.com" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	<button onclick="topFunction()" id="top" style="width: 6%;" title="Go to top">Top</button>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="fashion.js"></script>
+</body>
+</html>

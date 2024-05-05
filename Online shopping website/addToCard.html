@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add To Card</title>
+	<link rel="stylesheet" href="fashion.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.header{
+			text-align: center;
+			margin: 30px 0px 20px 0px;
+		}
+		.mini-head{
+			display: flex;
+			margin-left: 150px;
+			margin-top: 50px;
+		}
+		.mini-head h3{
+			padding-left: 200px;
+		}
+		.cart-row{
+			display: flex;
+			margin-left: 150px;
+			margin-top: 20px;
+		}
+		.cart-column{
+			padding-left: 143px;
+			border-bottom: 1px solid black;
+		}
+		.cart-item-image{
+			margin-left: 25px;
+		}
+		.cart-price{
+			margin-top: 20px;
+			padding-left: 124px;
+		}
+
+		.cart-quantity-input{
+			width: 12%;
+			margin-left: 50px;
+			margin-right: 20px;
+			padding: 5px;
+		}
+		.btn{
+			background-color: red;
+		}
+		.cart-total{
+			float: right;
+			margin-right: 200px;
+			margin-top: 30px;
+
+		}
+		.btn-purchase{
+			margin-left: 490px;
+			margin-top: 100px;
+			width: 25%;
+			height: 60px;
+			font-size: 17px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul style="margin-left: 160px;">
+					<li style="font-size: 23px;"><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li style="font-size: 23px;"><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li style="font-size: 23px;"><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li style="font-size: 23px;"><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 140px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size: 19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px; font-size: 16px;">Register</button>
+
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" name="registerForm" class="form-container" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	<section>
+		<h1 class="header">YOUR SHOPPING CART</h1>
+		<div class="mini-head">
+			<h3>Item</h3>
+			<h3>Price</h3>
+			<h3>Qunatity</h3>
+		</div>
+		<div class="cart-items">
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/shirt/shirt8.jfif" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">T-Shirt</span>
+				</div>
+				<span class="cart-price cart-column">$219.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/shirt/shirt9.jpg" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">T-Shirt</span>
+				</div>
+				<span class="cart-price cart-column" >$179.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/suit/suit8.jfif" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$359.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/suit/suit9.jpg" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$1095.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/trouser/trouser8.webp" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$1095.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/trouser/trouser9.webp" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$1095.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/shoe/shoe15.jpg" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$1095.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-item cart-column">
+					<img src="img/shoe/shoe11.webp" class="cart-item-image" style="width : 100px; height: 100px;">
+					<span class="cart-item-title">Suit</span>
+				</div>
+				<span class="cart-price cart-column" style="margin-left: 20px;">$1095.00</span>
+				<div class="cart-quantity cart-column">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="btn btn-danger" type="button">REMOVE</button>
+				</div>
+			</div>
+			<div class="cart-total">
+				<strong class="cart-total-title">Total</strong>
+				<span class="cart-total-price">$1852.00</span>
+			</div>
+		</div>
+		<a href="checkOutForm.html"><button type="button" class="btn-primary btn-purchase">Purchase Now</button></a>
+	</section>
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media">
+						<a href="https://www.facebook.com" style="font-size: 30px;" class="fa fa-facebook"></a>
+						<a href="https://www.twitter.com" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="https://www.pinterest.com" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <script src="fashion.js"></script>
+	  <script src="addToCart.js"></script>
+</body>
+</html>

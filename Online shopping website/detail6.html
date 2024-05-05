@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="fashion.css">
+	<link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.parent{
+            display: flex;
+            margin-top: 50px;
+        }
+        .photo{
+            width: 60%;
+        }
+        .photo img{
+            width: 350px;
+            height: 400px;
+            padding-left: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .photo .img3{
+            margin-left: 180px;       
+        }
+        .text{
+            width: 40%;
+        }
+        .child-img{
+        	margin-top: 40px;
+        	display: flex;
+        }
+        .child-img img{
+        	width: 250px;
+        	height: 350px;
+        	margin-left: 50px;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="logo">
+				<h1 style="font-size: 40px;">Authentic</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="fashion.html" style="text-decoration: none;color: black;">Home</a></li>
+					<li><a href="about.html" style="text-decoration: none;color: black;">About</a></li>
+					<li><a href="contact.html" style="text-decoration: none;color: black;">Contact</a></li>
+					<li><a href="service.html" style="text-decoration: none;color: black;">Service</a></li>
+				</ul>
+			</div>
+			<div class="form">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width: 120px;margin-left: 100px;font-size: 16px;">Login</button>
+				<div id="id01" class="modal">
+				<form class="modal-content animate" action="fashion.html" method="post" name="loginForm" onsubmit="return LoginValidate()">
+					<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/avatar.jfif" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname">
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw">
+						
+					<button type="submit" style="width: 100%; font-size: 20px;">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" style="width: 13%; font-size:19px;" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+			</div>
+			<button class="open-button" onclick="openForm()" style="margin-right: 30px;font-size: 16px;">Register</button>
+			<div class="form-popup" id="myForm">
+			<form method="post" action="fashion.html" class="form-container" name="registerForm" onsubmit="return RegisterValidate()">
+				<h1 style="margin-bottom: 20px;">Register</h1>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email">
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw">
+
+				<label for="reppsw"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Enter Reprat Password" name="reppsw">
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</nav>
+	</div>
+	 <div class="parent">
+        <div class="photo">
+            <img src="img/suit-detail1.avif">
+            <img src="img/suit-detail2.avif">
+        </div>
+        <div class="text">
+            <button type="button" style="width:21%;height: 40px;background-color: white;color: black;border: 1px solid black;font-size: 10px;border-radius: 0px;">Mix & Match</button>
+
+            <p style="font-size: 17px;margin-top: 10px;margin-bottom: 10px;">Ateleir Munro | Black Stretch Wool Suit <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1,095.00</span></p>
+
+            <p style="color: grey;">Pure Wool S110's by Vitable Barberis Canonico, Italy</p>
+
+            <i class="fa-regular fa-bookmark" style="border: 1px solid black;width: 8%;height: 50px;font-size: 20px;padding: 15px 10px 10px 13px; margin-top: 20px;border-radius: 5px;"></i>
+
+            <button type="button" style="background-color:black;color: white;border: 1px solid black;border-radius: 5px;margin-left: 20px;width: 65%;">SELECT SIZE</button>
+
+            <input type="radio" name="customize" value="Customize" style="margin-left: 10px;">Customize
+            <div style="margin-top: 30px;margin-left: 100px;">
+            	<i class="fas fa-check" style="margin-right: 10px;"></i><span>Free Delivery or collect in store.</span>
+            </div>
+            
+            <p style="color:grey;margin-top: 10px;">Details & Care</p>
+            <ul style="margin-top: 15px; line-height: 1.5;">
+            	<li>Product Code - C4778A-S</li>
+            	<li>Material - 	Pure Wool S110's</li>
+            	<li>Composition - 100% Wool</li>
+            	<li>Fabric Code - 586.861/4012</li>
+            	<li>Woven by - Vitable Barberis Canonico, Italy</li>
+            	<li>Care Instructions - Dry Clean Only</li>
+            </ul>
+        </div>
+    </div>
+    <p style="margin-left: 30px;margin-top: 40px;">YOU MIGHT ALSO LIKE</p>
+    <div class="ph">
+    	<div class="child-img">
+    		<div>
+    			<img src="img/suit-like1.avif">
+    			<p style="margin-left: 50px;margin-top: 20px;margin-bottom: 10px;">Navy Perennial Napoil Suit</p>
+    			<p style="color:grey;margin-left:50px;">Pure Wool By Reda, Italy</p>
+    			<p style="margin-left: 50px;">$ 4499HKD</p>
+    		</div>
+    		<div>
+    			<img src="img/suit-like2.avif">
+	    		<p style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;">RARE RABBIT MEN'S NAPLESS...</p>
+    			<strike style="margin-left: 50px;">Euro 3,499 </strike>
+    			<p style="margin-left: 50px;">Euro 1,749<span style="color:red;">&nbsp; 50%</span></p>
+    		</div>
+    		<div>
+    			<img src="img/suit-like3.avif">
+    			<p style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;">RARE RABBIT MENS VALBY PUR...</p>
+    			<strike style="margin-left: 50px;">Euro 2,999 </strike>
+    			<p style="margin-left: 50px;">Euro 1,499<span style="color:red;">&nbsp; 50%</span></p>
+    		</div>
+    	</div>
+	<footer>
+		<div class="main">
+			<div class="main1">
+				<div class="child ch">
+					<div class="logo">
+						<h1 style="font-size: 50px;">Authentic</h1>
+					</div>
+					<div class="media mm">
+						<a href="#" style="font-size: 30px;" class="fa fa-facebook"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-twitter"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-instagram"></a>
+						<a href="#" style="font-size: 30px;" class="fa fa-pinterest"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main2">
+				<div class="child1">
+					<h2>RESOURCES</h2>
+					<p>Application</p>
+					<p>Documentation</p>
+					<p>Systems</p>
+					<p>F&Q</p>
+				</div>
+				<div class="child2">
+					<h2>PRICING</h2>
+					<p>Overview</p>
+					<p>Premium Plans</p>
+					<p>Affiliate Program</p>
+					<p>Promotions</p>
+				</div>
+				<div class="child3">
+					<h2>COMPANY</h2>
+					<p>About Us</p>
+					<p>Blog</p>
+					<p>Partnerships</p>
+					<p>Careers</p>
+					<p>Press</p>
+				</div>
+				<div class="child4">
+					<h2>Social</h2>
+					<p>Facebook</p>
+					<p>Twitter</p>
+					<p>Instagram</p>
+					<p>Pinterest</p>
+				</div>
+				<div class="child5" style="margin-right: 20px;">
+					<h2 style="margin-right: 20px;">PAYMENT METHOD</h2>
+					<i class="fa fa-cc-visa" style="
+													color: white;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-amex" style="
+													color: blue;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-mastercard" style="
+													color: red;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<i class="fa fa-cc-discover" style="	
+													color: orange;
+													font-size: 40px;
+													margin-right: 10px;"></i>
+					<form action="fashion.html" style="margin: 10px 50px 0px 0px;" name="emailForm" onsubmit="return EmailValidate()">
+						<input type="text" name="email" placeholder="Enter Your Email" style="
+																		padding: 10px;
+																		margin-top: 15px;
+																		font-size: 18px;
+																		border: none;
+																		border-radius: 10px;">
+						<button type="submit" style="
+													 padding: 5px 15px 5px 10px;
+													 margin-top: 8px;
+													 margin-right: 16px;
+													 background: #ddd;
+													 font-size: 18px;
+													 border: none;
+													 cursor: pointer;
+													 width: 50%;
+													 background-color: green;">Subimt</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p style="color: white; text-align: center;padding-bottom: 10px;">CopyRight &copy; 2023 Authentic.com.mm</p>
+			<p style="color: white; text-align: center;padding-bottom: 30px;">All Right Reserved.</p>
+		</div>
+	  </footer>
+	  <button onclick="topFunction()" id="top" style="width: 6%;" title="Go to top">Top</button>
+	  <script src="fashion.js"></script>
+</body>
+</html>
